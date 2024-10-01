@@ -1,0 +1,59 @@
+/* cover.css */
+
+/* Fondo gris */
+body, html {
+  background-color: #4b767c;
+}
+
+/* Estilos para el enlace "Cover" */
+h3 a {
+  text-decoration: none; /* Eliminar la línea debajo del texto "Cover" */
+  color: white; /* Mantener el texto en blanco */
+  margin-left: 10px; /* Ajustar el margen izquierdo del enlace para moverlo hacia la izquierda */
+}
+
+/* Estilos para los enlaces de navegación */
+.nav {
+  display: flex; /* Asegurarse de que los enlaces estén en una fila en pantallas grandes */
+}
+
+.nav-link {
+  color: white !important; /* Color de texto de los enlaces en estado normal */
+  text-decoration: none; /* Sin subrayado en estado normal */
+  transition: color 0.3s ease; /* Transición suave para el cambio de color */
+  margin-left: 10px; /* Separar los enlaces unos de otros */
+}
+
+.nav-link:hover {
+  color: red !important; /* Cambiar el color a rojo al pasar el mouse */
+}
+
+.nav-link.active,
+.nav-link:focus {
+  color: white !important;
+  border-bottom: 2px solid red; /* Línea debajo de los enlaces seleccionados */
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 767.98px) {
+  .nav {
+    flex-direction: column; /* Poner los enlaces debajo del título en pantallas pequeñas */
+    align-items: center; /* Centrar los enlaces horizontalmente */
+    margin-top: 10px; /* Agregar un margen superior para separar los enlaces del título */
+  }
+}
+
+
+/* Centrar el contenido */
+.cover-container {
+  max-width: 42em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.btn-light {
+  background-color: red !important;
+  border-color: red !important;
+  color: white !important;
+}
